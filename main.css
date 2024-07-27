@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #3A79F3;
+    --secondary-color: #98C3F8;
+    --tertiary-color: #95A7C1;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    padding: 30px 150px;
+    font-family: var(--font-poppins);
+}
+
+.container-card {
+    background-color: var(--white-color);
+    border-radius: 15px;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+h2 {
+    color: var(--tertiary-color);
+    margin: 10px;
+    font-weight: normal;
+}
+
+.price-card {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.item-price-card {
+    flex: 1;
+    padding: 50px 0px;
+    border-radius: 10px;
+    border: 3px solid var(--tertiary-color);
+    text-align: center;
+    color: var(--tertiary-color);
+}
+
+.item-price-card.active{
+    border: 3px solid var(--primary-color);
+}
+
+.img-package {
+    height: 80px;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.horizontal-line {
+    border-top: 2px solid var(--tertiary-color); 
+    margin: 20px 0;
+}
+
+.btn-start {
+    margin-top: 20px;
+    background-color: transparent; 
+    border: 2px solid var(--tertiary-color); 
+    color: var(--tertiary-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-start:hover {
+    border: 2px solid var(--primary-color); 
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
